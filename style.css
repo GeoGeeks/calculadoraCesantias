@@ -1,10 +1,48 @@
+body{
+  background-image: url(pics/fondo.png);
+}
+
 .trailer-half{
 text-align: center;
 }
 h4{
-  color:#0079c1;
+  color:white;
   text-align: center;
 }
 #dias{
   text-align: center;
+  background-color: white;
+  color: #005e95;
+  width: 10%;
+  justify-content: center;
+  padding: 2%;
+
+}
+.card{
+  background-color: #005e95;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+input{
+  border-radius:35px;
+  justify-content: center;
+}
+.sub-nav{
+background-image: url(pics/banner.png);
+}
+h3{
+  font-weight: bold;
+}
+button{
+  font-weight: bold;
+}
+#diasTrabajados{
+  width: 100%;
+}
+.linea{
+  display: inline-block;
+}
+.esri-logo-reverse{
+  float: right;
 }

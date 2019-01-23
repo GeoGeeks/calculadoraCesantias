@@ -12,43 +12,52 @@
     <header class="sub-nav" role="banner">
       <div class="grid-container">
         <div class="column-24">
-          <h1 class="sub-nav-title text-white">Calcula tus cesantias</h1>
+          <h1 class="sub-nav-title text-white">Calculadora de Cesantias</h1>
+          <div class="esri-logo-reverse"></div>
         </div>
       </div>
     </header>
-  <div class="column-24 tablet-column-24 phone-column-24">
-    <div class="column-12 tablet-column-12 phone-column-24">
+    <div class="column-10 pre-7 tablet-column-16 phone-column-24">
+    <div class="panel modifier-class">
+      <h3>Calculadora</h3>
+      <p class="trailer-0">Ingrese su sueldo básico y conozca el valor de sus cesantías </p>
+    </div>
+  </div>
+
+  <div class="column-10 pre-7 tablet-column-16 phone-column-24">
 
       <div class="card card-bar-blue block trailer-1">
         <div class="card-content">
-          <form action="" method="post">
+          <form id="form" action="" method="post">
+            <label> Ingrese su salario básico Mensual</label>
           <label>
-            Salario
-            <input id="salario" type="number" required placeholder="1000000">
+            $
+          <h6 class="linea"> <input class="linea" id="salario" type="number" required placeholder="1000000"></h6>
           </label>
 
           <label>
             Número de días trabajados
-            <input id="diasTrabajados" type="range" min="0" max="360" value="0" step="1">
+            <center>
+          <label> 0<h6 class="linea"> <input id="diasTrabajados" class="linea" type="range" min="0" max="360" value="360" step="1"></h6>360</label>
+            <div id="dias"></div>
+          </center>
           </label>
-          <label id="dias"></label>
 
-          <button type="button" onclick="calculo();" class="btn btn-fill leader-1">Calcular</button>
+
+          <button type="button" onclick="calculo();" class="btn btn-fill btn-clear">Calcular Valor</button>
         </form>
+        <hr>
+        <div class="card-content">
+          <h4>El valor de sus Cesantías es de</h4>
+        <h2 class="trailer-half" id="cesantias"></h2>
+        </div>
       </div>
     </div>
 
 
 </div>
-<div class="column-12 tablet-column-12 phone-column-24">
-      <div class="card card-shaped block trailer-1">
-        <div class="card-content">
-          <h4>El valor de Cesantías es de</h4>
-        <h2 class="trailer-half" id="cesantias"></h2>
-        </div>
-      </div>
-</div>
-</div>
+
+
 
     <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.2/js/calcite-web.min.js"></script>
     <script src="main.js" charset="utf-8"></script>
